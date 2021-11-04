@@ -1,0 +1,119 @@
+.title {
+    $title: 'Big Boys Bots';
+    $extra-large: 4rem;
+    $stroke-width: $extra-large * 0.05;
+    position: relative;
+    display: inline-block;
+    font-size: $extra-large;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke-width: $stroke-width;
+    -webkit-text-stroke-color: white;
+    white-space: nowrap;
+    $x: 12px;
+    $y: 15px;
+    $step: 1px;
+    $red: red;
+    $orange: orange;
+
+        
+    text-shadow: $x $y $red,
+                 $x + $step $y + $step $orange,
+                 $x + $step * 2 $y + $step * 2 $orange,
+                 $x + $step * 3 $y + $step * 3 $orange,
+                 $x + $step * 4 $y + $step * 4 $orange,
+                 $x + $step * 5 $y + $step * 5 $orange,
+                 $x + $step * 6 $y + $step * 6 $orange,
+                 $x + $step * 7 $y + $step * 7 $orange,
+
+}
+
+section > article {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    color: white;
+    margin: 10px;
+    background-color: #737495;
+  }
+  
+  section {
+    background-image: url('https://robbreport.com/wp-content/uploads/2018/12/DJKhaledSneakers.jpg');
+    background-color: #cccccc;
+  
+  }
+    
+  article > div {
+    padding: 5px;
+    width: 10px;
+  }
+  
+  article > div:nth-child(1) {
+    width: 200px;
+    background-color: rgb(223, 29, 29);
+    text-align: center;
+  }
+  
+  article > div:nth-child(2) {
+    width: 200px;
+    background-color: rgb(66, 65, 65);
+    text-align: center;
+  }
+    
+  article > div:nth-child(3) {
+    width: 200px;
+    background-color: rgb(66, 65, 65);
+    text-align: center;
+  }
+  
+  article > div:nth-child(4) {
+    width: 200px;
+    background-color: rgb(66, 65, 65);
+    text-align: center;
+  }
+  
+  button {
+    background-color: orange;
+    border: none;
+    color: red;
+    padding: 0px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    height: 35px;
+    width: 340px;
+  }
+  
+  inputForm {
+    display: flex;
+    flex-direction: row;
+    
+    align-content: center;
+    height: 20px;
+    row-gap: 10px;
+    color: orange;
+  }
+
+  span {
+      color: rgb(255, 94, 0);
+      font-size: 20px;
+      font-weight: bold;
+  }
+  
+  input {
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    padding: 8px 16px;
+    margin: 8px 0;
+    
+  }
+  
+  input:focus {
+    background-color: lightblue;
+  }
+  
+  

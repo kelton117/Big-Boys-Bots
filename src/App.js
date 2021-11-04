@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
-import './App.css';
+
+import './styles.scss';
 
 export default function App() {
   const [state, setState] = useState({
     forms: [],
     newForm: {
-      shoe: 'ex Air Mag',
-      name: 'ex Marty McFly',
-      email: 'ex B2thefuture@gmail.com',
+      shoe: '',
+      name: '',
+      email: '',
       number: '',
     }
   });
@@ -34,9 +35,9 @@ export default function App() {
     setState((prevState) => ({
       ...prevState,
       newForm: {
-      shoe: 'ex. Air Mag',
-      name: 'ex. Marty McFly',
-      email: 'ex. B2thefuture@gmail.com',
+      shoe: '',
+      name: '',
+      email: '',
       number: '',
       }
     }));
@@ -58,7 +59,7 @@ export default function App() {
 
   return (
     <section>
-      <h2>Big Boys Bots</h2>
+      <h2 className='title'>Big Boys Bots</h2>
       <hr />
       {state.forms.map((s) => (
         <article key={s.shoe}>
@@ -66,23 +67,23 @@ export default function App() {
         </article>
       ))}
       <hr />
-      <form name='input' onSubmit={handleSubmit}>
+      <form name='inputForm' onSubmit={handleSubmit}>
         <label>
           <span>SHOE</span>
-          <input name='shoe' value={state.newForm.shoe} onChange={handleChange} />
-        </label>
+          <input name='shoe' placeholder='Air Mags..' value={state.newForm.shoe} onChange={handleChange} />
+        </label><br/>
         <label>
           <span>NAME</span>
-          <input name='name' value={state.newForm.name} onChange={handleChange} />
-        </label>
+          <input name='name' placeholder='Marty McFly..' value={state.newForm.name} onChange={handleChange} />
+        </label><br/>
         <label>
           <span>EMAIL</span>
-          <input name='email' value={state.newForm.email} onChange={handleChange} />
-        </label>
+          <input name='email' placeholder='B2theefuture@gmail.com..' value={state.newForm.email} onChange={handleChange} />
+        </label><br/>
         <label>
           <span>PHONE NUMBER</span>
-          <input name='number' value={state.newForm.number} onChange={handleChange} />
-        </label>
+          <input name='number' placeholder='512-222-8989..' value={state.newForm.number} onChange={handleChange} />
+        </label><br/>
         <button>Add Bot</button>
       </form>
      

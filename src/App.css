@@ -1,4 +1,46 @@
+section > article {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  color: white;
+  margin: 10px;
+  background-color: #737495;
+}
 
+section {
+  background-image: url('https://robbreport.com/wp-content/uploads/2018/12/DJKhaledSneakers.jpg');
+  background-color: #cccccc;
+
+}
+  
+article > div {
+  padding: 5px;
+  width: 10px;
+}
+
+article > div:nth-child(1) {
+  width: 200px;
+  background-color: rgb(223, 29, 29);
+  text-align: center;
+}
+
+article > div:nth-child(2) {
+  width: 200px;
+  background-color: rgb(66, 65, 65);
+  text-align: center;
+}
+  
+article > div:nth-child(3) {
+  width: 200px;
+  background-color: rgb(66, 65, 65);
+  text-align: center;
+}
+
+article > div:nth-child(4) {
+  width: 200px;
+  background-color: rgb(66, 65, 65);
+  text-align: center;
+}
 
 button {
   background-color: #4CAF50; /* Green */
@@ -12,7 +54,23 @@ button {
   height: 35px;
 }
 
+inputForm {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  row-gap: 10px;
+}
+
 input {
   display: flex;
   flex-direction: row;
+  width: 35%;
+  padding: 8px 16px;
+  margin: 8px 0;
+  
 }
+
+input:focus {
+  background-color: lightblue;
+}
+
