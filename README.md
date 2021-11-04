@@ -24,7 +24,7 @@ This is a form for people to be able to get in touch with me for making a sneake
 <img src="/public/images/Project3SS2.png" style=" width:200px ; height:200px " />
 
 ## Getting Started
-[Click here]() to get in touch with me about a sneaker bot!
+[Click here](https://nervous-goldwasser-72aa93.netlify.app/) to get in touch with me about a sneaker bot!
 
 ## Future Enhancements
 In the future I would like to make it so that you can click on the appointments and edit them to make them pending, recieved and finished. Also would like to add authorization so that you can only see the forms that the user makes and the admin can see all of them. 
